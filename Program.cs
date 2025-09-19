@@ -1,15 +1,15 @@
 ﻿//using System;
 using Microsoft.VisualBasic;
-using Models;
-using Services;
+using SmallProject.Models;
+using SmallProject.Services;
 
-namespace Main
+namespace SmallProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Book HobbitBook = new Book
+            Book HobbitBook = new()
             {
                 Title = "The Hobbit",
                 Author = "J.R.R. Tolkien",
@@ -17,7 +17,7 @@ namespace Main
                 YearPublished = 1937
             };
 
-            Book OrwellBook = new Book
+            Book OrwellBook = new()
             {
                 Title = "1984",
                 Author = "George Orwell",
@@ -25,20 +25,11 @@ namespace Main
                 YearPublished = 1949
             };
 
-            User Adam = new User
-            {
-                Name = "Adam",
-                Email = "adam@gmail.com"
-            };
-
-            User Boris = new User
-            {
-                Name = "Boris",
-                Email = "boris@gmail.com"
-            };
+            IUser Adam = UserFactory.CreateUser("Regular", "Adam", "adam@gmail.com");
+            IUser Boris = UserFactory.CreateUser("Regular", "Boris", "boris@gmail.com");
 
 
-            LoanService loanService = new LoanService();
+            LoanService loanService = new();
 
             loanService.LoanBook(HobbitBook, Adam);
             loanService.LoanBook(OrwellBook, Boris);

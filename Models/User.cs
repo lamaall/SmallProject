@@ -1,10 +1,37 @@
 //using System;
 
-namespace Models
+namespace SmallProject.Models
 {
-    public class User
+    public interface IUser
     {
-        public required string Name { get; set; }
-        public required string Email { get; set; }
+        string Name { get; }
+        string Email { get; }
     }
+
+
+    public class RegularUser(string name, string email) : IUser
+    {
+        public string Name { get; private set; } = name;
+        public string Email { get; private set; } = email;
+    }
+
+    public class PremiumUser(string name, string email) : IUser
+    {
+        public string Name { get; private set; } = name;
+        public string Email { get; private set; } = email;
+    }
+
+    public static class UserFactory
+    {
+        public static IUser CreateUser(string type, string name, string email)
+        {
+            return type switch
+            {
+                "Regular" => new RegularUser(name, email),
+                "Premium" => new PremiumUser(name, email),
+                _ => throw new ArgumentException("Invalid user type")
+            };
+        }
+    }
+    
 }

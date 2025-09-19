@@ -1,7 +1,7 @@
 //using System;
-using Enums;
+using SmallProject.Enums;
 
-namespace Models
+namespace SmallProject.Models
 {
     public class Book
     {

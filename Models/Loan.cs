@@ -1,11 +1,11 @@
 //using System;
 
-namespace Models
+namespace SmallProject.Models
 {
     public class Loan
     {
         public required Book Book { get; set; }
-        public required User User { get; set; }
+        public required IUser User { get; set; }
         public required DateTime LoanDate { get; set; }
         public DateTime? ReturnDate { get; set; }
 

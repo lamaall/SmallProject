@@ -1,4 +1,4 @@
-namespace Enums
+namespace SmallProject.Enums
 {
     public enum BookStatus
     {

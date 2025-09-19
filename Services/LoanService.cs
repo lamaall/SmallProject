@@ -1,13 +1,13 @@
-using Enums;
-using Models;
+using SmallProject.Enums;
+using SmallProject.Models;
 
-namespace Services
+namespace SmallProject.Services
 {
     public class LoanService : ILoanService
     {
         private readonly List<Loan> _loans = new List<Loan>();
 
-        public bool LoanBook(Book book, User user)
+        public bool LoanBook(Book book, IUser user)
         {
             if (book.Status == BookStatus.Available)
             {

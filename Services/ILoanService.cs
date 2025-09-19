@@ -1,11 +1,11 @@
 //using System.Collections.Generic;
-using Models;
+using SmallProject.Models;
 
-namespace Services
+namespace SmallProject.Services
 {
     public interface ILoanService
     {
-        bool LoanBook(Book bookCopy, User user);
+        bool LoanBook(Book bookCopy, IUser user);
         bool ReturnBook(Book bookCopy);
         List<Loan> ListLoans();
     }
