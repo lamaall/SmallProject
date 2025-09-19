@@ -17,12 +17,6 @@ namespace Main
                 YearPublished = 1937
             };
 
-            BookCopy HobbitCopy1 = new BookCopy
-            {
-                CopyId = 1,
-                Book = HobbitBook
-            };
-
             Book OrwellBook = new Book
             {
                 Title = "1984",
@@ -30,13 +24,6 @@ namespace Main
                 ISBN = "978-0451524935",
                 YearPublished = 1949
             };
-
-            BookCopy OrwellCopy1 = new BookCopy
-            {
-                CopyId = 1,
-                Book = OrwellBook
-            };
-
 
             User Adam = new User
             {
@@ -53,10 +40,10 @@ namespace Main
 
             LoanService loanService = new LoanService();
 
-            loanService.LoanBook(HobbitCopy1, Adam);
-            loanService.LoanBook(OrwellCopy1, Boris);
-            loanService.LoanBook(HobbitCopy1, Boris);
-            loanService.ReturnBook(HobbitCopy1);
+            loanService.LoanBook(HobbitBook, Adam);
+            loanService.LoanBook(OrwellBook, Boris);
+            loanService.LoanBook(HobbitBook, Boris);
+            loanService.ReturnBook(HobbitBook);
 
             foreach (Loan loan in loanService.ListLoans())
             {

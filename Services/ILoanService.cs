@@ -5,8 +5,8 @@ namespace Services
 {
     public interface ILoanService
     {
-        bool LoanBook(BookCopy bookCopy, User user);
-        bool ReturnBook(BookCopy bookCopy);
+        bool LoanBook(Book bookCopy, User user);
+        bool ReturnBook(Book bookCopy);
         List<Loan> ListLoans();
     }
 }

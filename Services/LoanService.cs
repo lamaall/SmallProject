@@ -7,19 +7,19 @@ namespace Services
     {
         private readonly List<Loan> _loans = new List<Loan>();
 
-        public bool LoanBook(BookCopy bookCopy, User user)
+        public bool LoanBook(Book book, User user)
         {
-            if (bookCopy.Status == BookStatus.Available)
+            if (book.Status == BookStatus.Available)
             {
                 Loan loan = new Loan
                 {
-                    BookCopy = bookCopy,
+                    Book = book,
                     User = user,
                     LoanDate = DateTime.Now,
                     ReturnDate = null
                 };
 
-                bookCopy.Status = BookStatus.Loaned;
+                book.Status = BookStatus.Loaned;
                 _loans.Add(loan);
 
                 Console.WriteLine("Book successfully loaned");
@@ -29,9 +29,9 @@ namespace Services
             return false;
         }
 
-        public bool ReturnBook(BookCopy bookCopy)
+        public bool ReturnBook(Book book)
         {
-            Loan? loan = _loans.FirstOrDefault(l => l.BookCopy == bookCopy && l.ReturnDate == null);
+            Loan? loan = _loans.FirstOrDefault(l => l.Book == book && l.ReturnDate == null);
             if (loan == null)
             {
                 Console.WriteLine("Book cant be returned");
@@ -39,7 +39,7 @@ namespace Services
             }
 
             loan.ReturnDate = DateTime.Now;
-            bookCopy.Status = BookStatus.Available;
+            book.Status = BookStatus.Available;
 
             Console.WriteLine("Book successfully returned");
             return true;
