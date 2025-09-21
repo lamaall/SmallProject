@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dotnet\\SmallProject\\SmallProject.Tests\\SmallProject.Tests.csproj": {}
+    "C:\\dotnet\\SmallProject\\SmallProject.tests\\SmallProject.tests.csproj": {}
   },
   "projects": {
-    "C:\\dotnet\\SmallProject\\SmallProject.Tests\\SmallProject.Tests.csproj": {
+    "C:\\dotnet\\SmallProject\\SmallProject.tests\\SmallProject.tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dotnet\\SmallProject\\SmallProject.Tests\\SmallProject.Tests.csproj",
-        "projectName": "SmallProject.Tests",
-        "projectPath": "C:\\dotnet\\SmallProject\\SmallProject.Tests\\SmallProject.Tests.csproj",
+        "projectUniqueName": "C:\\dotnet\\SmallProject\\SmallProject.tests\\SmallProject.tests.csproj",
+        "projectName": "SmallProject.tests",
+        "projectPath": "C:\\dotnet\\SmallProject\\SmallProject.tests\\SmallProject.tests.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\dotnet\\SmallProject\\SmallProject.Tests\\obj\\",
+        "outputPath": "C:\\dotnet\\SmallProject\\SmallProject.tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

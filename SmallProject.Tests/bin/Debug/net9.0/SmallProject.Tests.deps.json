@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "SmallProject.Tests/1.0.0": {
+      "SmallProject.tests/1.0.0": {
         "dependencies": {
           "Microsoft.NET.Test.Sdk": "17.12.0",
           "SmallProject": "1.0.0",
@@ -15,7 +15,7 @@
           "xunit.runner.visualstudio": "2.8.2"
         },
         "runtime": {
-          "SmallProject.Tests.dll": {}
+          "SmallProject.tests.dll": {}
         }
       },
       "coverlet.collector/6.0.2": {},
@@ -352,7 +352,7 @@
     }
   },
   "libraries": {
-    "SmallProject.Tests/1.0.0": {
+    "SmallProject.tests/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -98,9 +98,9 @@ C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.As
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.AssemblyInfo.cs
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.csproj.CoreCompileInputs.cache
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.sourcelink.json
-C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallPro.385333DC.Up2Date
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.dll
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\refint\SmallProject.Tests.dll
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.pdb
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\SmallProject.Tests.genruntimeconfig.cache
 C:\dotnet\SmallProject\SmallProject.Tests\obj\Debug\net9.0\ref\SmallProject.Tests.dll
+C:\dotnet\SmallProject\SmallProject.tests\obj\Debug\net9.0\SmallPro.BC7333CF.Up2Date
