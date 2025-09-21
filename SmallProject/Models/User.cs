@@ -1,5 +1,9 @@
 using SmallProject.Enums;
 
+/* 
+ Vybral som Factory pattern na možnosť 1 v úlohe 2. 
+ Centralizovanie tvorby Userov do jednej triedy umožňuje ľahkú škálovateľnosť.
+*/
 namespace SmallProject.Models
 {
     public abstract class User(string name, string email)
