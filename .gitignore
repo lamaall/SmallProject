@@ -1,0 +1,50 @@
+# Visual Studio / .NET
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+bin/
+obj/
+out/
+
+# Rider
+.idea/
+
+# Resharper
+*.DotSettings.user
+
+# Test results
+TestResults/
+*.trx
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+.nuget/
+
+# Dotnet publish output
+publish/
+
+# Logs
+*.log
+
+# Docker
+docker-compose.override.yml
+Dockerfile.*.local
+*.dockerfile
+
+# ASP.NET Core
+wwwroot/
+*.db
+appsettings.*.json
+
+# User secrets
+secrets.json
+
+# Misc
+*.DS_Store
+*.swp
